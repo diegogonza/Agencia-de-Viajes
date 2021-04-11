@@ -4,18 +4,23 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="img/icono.png" type="image/x-icon">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />    
+    <!-- icon -->
+    <link rel="shortcut icon" href="src/img/icono.png" type="image/x-icon">
+    <!-- css -->
+    <link rel="stylesheet" href="src/css/style.css">
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />  
+    <!-- animate css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>  
     <title>Agencia de Viajes - Viaja +</title>
 </head>
 <body>
 
     <header>
-        <nav class="nav-bar container">
+        <nav class="nav-bar flex container">
             <div>
                 <a href="index.html">
-                    <img src="img/viaja+.png" alt="logo">
+                    <img src="src/img/viaja+.png" alt="logo">
                 </a>
             </div>
             <div class="nav-item">
@@ -27,7 +32,7 @@
             </div>
         </nav>
     </header>
-    <video class="video-background" src="img/video.mp4" type="video/mp4" autoplay loop muted></video>
+    <video class="video-background" src="src/img/video.mp4" type="video/mp4" autoplay loop muted></video>
 
     <!-- main -->
     <main>
@@ -42,12 +47,12 @@
     
 
     <!-- Type to travel -->
-    <section class="country">
+    <section class="country flex">
         <div class="container">
             <h2 class="text-center">¿A dónde vamos hoy?</h2><br>
-            <div class="country-content-card">
+            <div class="country-content-card flex">
                 <div class="country-card">
-                    <img src="img/paises/viajes a asia.jpg" alt="viajes a asia">
+                    <img src="src/img/paises/viajes a asia.jpg" alt="viajes a asia">
                     <div class="country-card-body">
                         
                     </div>
@@ -56,45 +61,59 @@
                         Viajar a Asia es un viaje lleno de contrastes geográficos y culturales.
                     </p>
                     <a href="">
-                        <b class="text-center fas fa-arrow-right"></b>
+                        <b class="text-center fas fa-arrow-right flex"></b>
                     </a>
                 </div>
 
                 <div class="country-card">
-                    <img src="img/paises/viajes a africa.jpg" alt="viajes a africa">
+                    <img src="src/img/paises/viajes a africa.jpg" alt="viajes a africa">
                     <h2>África</h2>
                     <p>
                         Viajar a África es todo un sueño que debe realizarse al menos una vez en la vida.
                     </p>
                     <a href="">
-                        <b class="text-center fas fa-arrow-right"></b>
+                        <b class="text-center fas fa-arrow-right flex"></b>
                     </a>
                 </div>
 
                 <div class="country-card">
-                    <img src="img/paises/viaja a america.jpg" alt="viaja a america">
+                    <img src="src/img/paises/viaja a america.jpg" alt="viaja a america">
                     <h2>América</h2>
                     <p>
                         La naturaleza ha creado una serie de territorios totalmente impresionantes.
                     </p>
                     <a href="">
-                        <b class="text-center fas fa-arrow-right"></b>
+                        <b class="text-center fas fa-arrow-right flex"></b>
                     </a>
                 </div>
 
                 <div class="country-card">
-                    <img src="img/paises/viajes a europa.jpg" alt="viajes a europa">
+                    <img src="src/img/paises/viajes a europa.jpg" alt="viajes a europa">
                     <h2>Europa</h2>
                     <p>
                         Es hora de tomar un pequeño tour por todo Europa. ¿Que dices te animas?
                     </p>
                     <a href="">
-                        <b class="text-center fas fa-arrow-right"></b>
+                        <b class="text-center fas fa-arrow-right flex"></b>
                     </a>
                 </div>
 
             </div>
         </div>
     </section>
+
+    <section class="traveler">
+        <div class="traveler-content">
+            <h2>Titulo 2</h2>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi deleniti ipsa hic corrupti cupiditate, quaerat nisi asperiores nobis quo dolores nostrum omnis eum ab blanditiis ipsum quam dolorem placeat aspernatur!
+            </p>
+        </div>
+        <div class="traveler-img" >
+            <img alt="viajes" id="imgRotate">
+        </div>
+    </section>
+
+    <script src="src/js/effect.js"></script>
 </body>
 </html>
