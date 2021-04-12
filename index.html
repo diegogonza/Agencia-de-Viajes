@@ -20,15 +20,18 @@
         <nav class="nav-bar flex container">
             <div>
                 <a href="index.html">
-                    <img src="src/img/viaja+.png" alt="logo">
+                    <img src="src/img/logo.png" alt="logo">
                 </a>
             </div>
             <div class="nav-item">
-                <li>
-                    <a href="#">
-                        <button class="btn-login ">Iniciar Sesión</button>
-                    </a>
-                </li>
+                <ul class="nav-item-ul flex">
+                    <li>
+                        <a href="#">Destinos</a>
+                    </li>
+                    <li>
+                        <a href="#" class="btn-login">Iniciar Sesión</a>
+                    </li>
+                </ul>
             </div>
         </nav>
     </header>
@@ -60,7 +63,7 @@
                     <p>
                         Viajar a Asia es un viaje lleno de contrastes geográficos y culturales.
                     </p>
-                    <a href="">
+                    <a href="#">
                         <b class="text-center fas fa-arrow-right flex"></b>
                     </a>
                 </div>
@@ -71,7 +74,7 @@
                     <p>
                         Viajar a África es todo un sueño que debe realizarse al menos una vez en la vida.
                     </p>
-                    <a href="">
+                    <a href="#">
                         <b class="text-center fas fa-arrow-right flex"></b>
                     </a>
                 </div>
@@ -82,7 +85,7 @@
                     <p>
                         La naturaleza ha creado una serie de territorios totalmente impresionantes.
                     </p>
-                    <a href="">
+                    <a href="#">
                         <b class="text-center fas fa-arrow-right flex"></b>
                     </a>
                 </div>
@@ -93,7 +96,7 @@
                     <p>
                         Es hora de tomar un pequeño tour por todo Europa. ¿Que dices te animas?
                     </p>
-                    <a href="">
+                    <a href="#">
                         <b class="text-center fas fa-arrow-right flex"></b>
                     </a>
                 </div>
@@ -102,18 +105,78 @@
         </div>
     </section>
 
+    <!-- traveler -->
     <section class="traveler">
         <div class="traveler-content">
-            <h2>Titulo 2</h2>
+            <h2>Descubre lugares INCREIBLES</h2>
             <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi deleniti ipsa hic corrupti cupiditate, quaerat nisi asperiores nobis quo dolores nostrum omnis eum ab blanditiis ipsum quam dolorem placeat aspernatur!
+                ¿Qué te hace elegir un destino sobre otro? puede ser por: preocupaciones personales, situación económica, compañeros de viaje, etc. La elección no siempre es fácil, pero puedes ver un listado de <a href="#">los mejores lugares para viajar este año </a> y darte una idea.
             </p>
         </div>
         <div class="traveler-img" >
-            <img alt="viajes" id="imgRotate">
+            <img alt="viajes" name="imgRotate">
         </div>
     </section>
 
+    <!-- enterprise or traveler -->
+    <section class="enterprise-or-traveler">
+        <div class="enterprise-or-traveler-content flex">
+            <div class="enterprise-or-traveler-traveler">
+                <h2 class="text-center">Soy un viajero</h2>
+                <img src="src/img/recursos/travel.png" alt="">
+                <div>
+                    <a href="#" class="btn flex">Ver Precios</a>
+                </div>
+            </div>
+            <div class="enterprise-or-traveler-enterprise">
+                <h2 class="text-center">Viaje de negocios</h2>
+                <img src="src/img/recursos/enterprise.png" alt="">
+                <a href="#" class="btn flex">Ver Precios</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- mail -->
+    <section class="mail">
+        <div class="mail-content flex">
+            <div class="mail-content-text">
+                <h2>Boletín Informativo</h2>
+                <p>Suscribete y accede a toda nuestra sección de noticias y ofertas semanales.</p>
+                <a href="#" class="btn flex">Suscribirme</a>
+            </div>
+            <img src="src/img/recursos/mail.png" alt="">
+        </div>
+    </section>
+
+    <footer class="flex">
+        <img src="src/img/logo.png" alt="logo">
+        <div>
+            <p>
+                He creado esta página con el fin de dar a conocer mis habilidaes como desarrollador web e iniciar mi propio portafolio personal. Sí gustas puedes contactarme. 
+            </p>
+            <div class="footer-icons">
+                <a href="https://www.linkedin.com/in/diego-gonz%C3%A1lez-b15506188/" target="_blank" rel="nooperner">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+                <a href="https://twitter.com/diegogonzal011" target="_blank" rel="nooperner">
+                    <i class="fab fa-twitter"></i>
+                </a>
+                <a href="https://github.com/diegogonza" target="_blank" rel="nooperner">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a href="mailto:diegoandresgonzalezdiaz@gmail.com" target="_blank" rel="nooperner">
+                    <i class="fas fa-envelope"></i>
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <div class="footer-copyright">
+        <p>
+            Copyright &copy; <a id="year"></a> Diego González - Todos los derechos reservados
+        </p>
+    </div>
     <script src="src/js/effect.js"></script>
+    <script src="src/js/copyright.js"></script>
 </body>
 </html>
