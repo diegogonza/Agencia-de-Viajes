@@ -7,6 +7,7 @@
     <!-- icon -->
     <link rel="shortcut icon" href="src/img/icono.png" type="image/x-icon">
     <!-- css -->
+    <link rel="stylesheet" href="src/css/mobile.css" media="screen and (max-width: 645px)">
     <link rel="stylesheet" href="src/css/style.css">
     <!-- font awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />  
@@ -18,16 +19,20 @@
 <body>
 
     <header>
-        <nav class="nav-bar flex container">
+        <nav class="header-nav-bar flex container ">
             <div>
                 <a href="index.html">
                     <img src="src/img/logo.png" alt="logo">
                 </a>
             </div>
-            <div class="nav-item">
-                <ul class="nav-item-ul flex">
+            <div class="header-nav-item ">
+                <i class="fas fa-bars"></i>
+                <ul class="header-nav-item-ul">
                     <li>
                         <a href="#">Destinos</a>
+                    </li>
+                    <li>
+                        <a href="#">Precios</a>
                     </li>
                     <li>
                         <a href="#" class="btn-login">Iniciar Sesión</a>
@@ -108,35 +113,46 @@
 
     <!-- traveler -->
     <section class="traveler">
-        <div class="traveler-content">
-            <h2>Descubre lugares INCREIBLES</h2>
-            <p>
-                ¿Qué te hace elegir un destino sobre otro? puede ser por: preocupaciones personales, situación económica, compañeros de viaje, etc. La elección no siempre es fácil, pero puedes ver un listado de <a href="#">los mejores lugares para viajar este año </a> y darte una idea.
-            </p>
-        </div>
-        <div class="traveler-img" >
-            <img alt="viajes" name="imgRotate">
+        <div class="traveler-body">
+            <div class="traveler-content">
+                <h2>Descubre lugares INCREIBLES</h2>
+                <p>
+                    ¿Qué te hace elegir un destino sobre otro? puede ser por: preocupaciones personales, situación económica, compañeros de viaje, etc. La elección no siempre es fácil, pero puedes ver un listado de <a href="#">los mejores lugares para viajar este año </a> y darte una idea.
+                </p>
+            </div>
+            <div class="traveler-img" >
+                <img alt="viajes" name="imgRotate">
+            </div>
         </div>
     </section>
 
     <!-- enterprise or traveler -->
     <section class="enterprise-or-traveler">
-        <div class="enterprise-or-traveler-content flex">
-            <div class="enterprise-or-traveler-traveler">
-                <h2 class="text-center">Soy un viajero</h2>
-                <img src="src/img/recursos/travel.png" alt="">
-                <div>
-                    <a href="#" class="btn flex">Ver Precios</a>
-                </div>
-            </div>
-            <div class="enterprise-or-traveler-enterprise">
-                <h2 class="text-center">Viaje de negocios</h2>
-                <img src="src/img/recursos/enterprise.png" alt="">
+        <div class="enterprise-or-traveler-content1">
+            <img src="src/img/recursos/travel.png" alt="viajero">
+            <div>
+                <h2>Soy un viajero</h2>
+                <p>
+                    Disfruta de los mejores lugares con los mejores <br>
+                    precios para viajeros frecuentes. 
+                </p>
                 <a href="#" class="btn flex">Ver Precios</a>
             </div>
         </div>
+        <hr>
+        <div class="enterprise-or-traveler-content2">
+            <div>
+                <h2>Viaje de negocios</h2>
+                <p>
+                    Saca el máximo provecho a tus vuelos con los <br>
+                    planes especiales para empresas.
+                </p>
+                <a href="#" class="btn flex">Ver Precios</a>
+            </div>
+            <img src="src/img/recursos/enterprise.png" alt="">
+        </div>
     </section>
-
+    
     <!-- mail -->
     <section class="mail">
         <div class="mail-content flex">
@@ -153,7 +169,9 @@
         <img src="src/img/logo.png" alt="logo">
         <div>
             <p>
-                He creado esta página con el fin de dar a conocer mis habilidaes como desarrollador web e iniciar mi propio portafolio personal. Sí gustas puedes contactarme. 
+                He creado esta página con el fin de dar a conocer un poco <br>
+                mis habilidaes como desarrollador web e iniciar mi propio portafolio <br>
+                de proyectos. Sí gustas puedes seguirme. 
             </p>
             <div class="footer-icons">
                 <a href="https://www.linkedin.com/in/diego-gonz%C3%A1lez-b15506188/" target="_blank" rel="nooperner">

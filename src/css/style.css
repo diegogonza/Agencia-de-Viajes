@@ -15,6 +15,10 @@
     list-style: none;
     text-decoration: none;
 }
+img{
+    max-width: 100%;
+    height: auto;
+}
 .container{
     width: 80%;
     margin: auto;
@@ -39,15 +43,24 @@ header{
 header nav img{
     width: 150px;
 }
-.nav-bar{
+.header-nav-bar{
     justify-content: space-between;
 }
-.nav-item-ul{
-    justify-content: space-around; 
+.header-nav-item-ul{
+    display: flex;
+    width: 100%;
+    align-items: center;
 }
-.nav-item-ul li a{
+.header-nav-item-ul li{
+    display: flex;
+    justify-content: space-around;
+}
+.header-nav-item-ul li a{
     padding: 10px 15px;
     color: white;
+}
+.header-nav-item  i{
+    display: none;
 }
 .btn-login{
     color: white;
@@ -136,63 +149,72 @@ h1{
 /* traveler */
 /* ------------------------------------------------------------ */
 .traveler{
+    background-color: var(--fondo);
+    padding: 125px 0px;
+}
+.traveler-body{
+    width: 90%;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
     align-items: center;
-    background-color: var(--fondo);
-    padding: 125px 25px;
+    margin: auto;
 }
 .traveler-content{
     width: 500px;
-    margin-bottom: 25px;
+    margin: 55px;   
 }
 .traveler-img img{
-    width: 400px;
+    width: 300px;
     border-radius: 8px;
     box-shadow:  0px 5px 10px 2px #757575;
 }
 .traveler-content h2{
-    font-size: 50px;
+    font-size: 30px;
 }
 /* ------------------------------------------------------------ */
 /* enterprise-or-traveler */
 /* ------------------------------------------------------------ */
 .enterprise-or-traveler{
-    padding-top: 150px;
-    padding-bottom: 150px;
+    padding: 25px;
     background-color: #dfdfdf;
 }
-.enterprise-or-traveler-content{
+.enterprise-or-traveler-content1{
+    display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: center;
     flex-wrap: wrap;
+    margin: 25px;
 }
-.enterprise-or-traveler-content h2{
-    font-size: 40px;
-    margin-bottom: 15px;
+.enterprise-or-traveler-content2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap-reverse;
+    margin: 25px;
+}
+.enterprise-or-traveler h2{
+    font-size: 30px;
+    margin-bottom: 5px;
+}
+.enterprise-or-traveler img{
+    width: 400px;
 }
 .enterprise-or-traveler-traveler, .enterprise-or-traveler-enterprise{
-    background-color: var(--fondo);
-    padding: 50px;
-    border-radius: 12px;
-    box-shadow:  0px 6px 5px 0px #949494;
-    margin-bottom: 25px;
 }
 .btn{
     justify-content: center;
     width: 100%;
+    margin: 10px 0;
     padding: 15px;
     color: white;
     background-color: var(--colorQuinternario);
     border-radius: 50px;
-    margin-top: 25px;
 }
 /* ------------------------------------------------------------ */
 /* mail */
 /* ------------------------------------------------------------ */
 .mail{
-    text-align: center;
     padding: 150px 0px;
     background-color: var(--fondo);
 }
@@ -224,9 +246,6 @@ footer{
 footer img{
     width: 300px;
     margin-bottom: 35px;
-}
-footer p{
-    width: 500px;
 }
 .footer-copyright{
     padding: 12px;

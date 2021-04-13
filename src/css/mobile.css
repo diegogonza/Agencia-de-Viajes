@@ -1,0 +1,29 @@
+:root{
+    --colorPrincipal: #fb5607;
+    --colorSecundario: #ffbe0b;
+    --colorTerciario: #FF006E;
+    --colorCuateario: #8338ec;
+    --colorQuinternario: #3A86FF;
+    --fondo: #e9e9e9;
+    --Titles: #454545;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat';
+    list-style: none;
+    text-decoration: none;
+}
+/* ------------------------------------------------------------ */
+/* header */
+/* ------------------------------------------------------------ */
+.header-nav-item i.fa-bars{
+    display: block;
+    font-size: 28px;
+    color: white;   
+    cursor: pointer; 
+}
+header .header-nav-item-ul{
+    display: none;
+}
