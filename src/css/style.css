@@ -37,8 +37,8 @@ h2,h3,h4,h5{
 /* Header */
 /* ------------------------------------------------------------ */
 header{
-    padding: 15px;
-    background-color: rgba(0, 0, 0, 0.199);
+    padding: 18px;
+    background-color: #07070767;
 }
 header nav img{
     width: 150px;
@@ -199,8 +199,6 @@ h1{
 }
 .enterprise-or-traveler img{
     width: 400px;
-}
-.enterprise-or-traveler-traveler, .enterprise-or-traveler-enterprise{
 }
 .btn{
     justify-content: center;

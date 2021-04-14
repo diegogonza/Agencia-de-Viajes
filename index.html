@@ -26,15 +26,18 @@
                 </a>
             </div>
             <div class="header-nav-item ">
-                <i class="fas fa-bars"></i>
-                <ul class="header-nav-item-ul">
+                <div class="header-icon">
+                    <i class="fas fa-bars" id="hamburger" onclick="NavBar()"></i>
+                    <i class="fas fa-user"></i>
+                </div>
+                <ul class="header-nav-item-ul none" id="nav-bar">
                     <li>
                         <a href="#">Destinos</a>
                     </li>
                     <li>
                         <a href="#">Precios</a>
                     </li>
-                    <li>
+                    <li class="header-btn-login">
                         <a href="#" class="btn-login">Iniciar Sesión</a>
                     </li>
                 </ul>
@@ -166,7 +169,9 @@
     </section>
 
     <footer class="flex">
-        <img src="src/img/logo.png" alt="logo">
+        <a href="index.html">
+            <img src="src/img/logo.png" alt="logo">
+        </a>
         <div>
             <p>
                 He creado esta página con el fin de dar a conocer un poco <br>
@@ -195,7 +200,7 @@
             Copyright &copy; <a id="year"></a> Diego González - Todos los derechos reservados
         </p>
     </div>
-    <script src="src/js/effect.js"></script>
+    <script src="src/js/plugins/effect.js"></script>
     <script src="src/js/copyright.js"></script>
 </body>
 </html>
