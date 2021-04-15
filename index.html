@@ -11,8 +11,6 @@
     <link rel="stylesheet" href="src/css/style.css">
     <!-- font awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />  
-    <!-- animate css -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>  
     <meta name="description" content="Proyecto Personal: En esta ocasión he desarrollado una página para una agencia de viajes, sí gustas puedes contactarme y podríamos trabajar juntos">
     <title>Agencia de Viajes - Goi</title>
 </head>
@@ -21,7 +19,7 @@
     <header>
         <nav class="header-nav-bar flex container ">
             <div>
-                <a href="index.html">
+                <a href="/">
                     <img src="src/img/logo.png" alt="logo">
                 </a>
             </div>
@@ -32,10 +30,10 @@
                 </div>
                 <ul class="header-nav-item-ul none" id="nav-bar">
                     <li>
-                        <a href="#">Destinos</a>
+                        <a href="#destinos">Destinos</a>
                     </li>
                     <li>
-                        <a href="#">Precios</a>
+                        <a href="#precios">Precios</a>
                     </li>
                     <li class="header-btn-login">
                         <a href="#" class="btn-login">Iniciar Sesión</a>
@@ -59,7 +57,7 @@
     
 
     <!-- Type to travel -->
-    <section class="country flex">
+    <section class="country flex" id="destinos">
         <div class="container">
             <h2 class="text-center">¿A dónde vamos hoy?</h2><br>
             <div class="country-content-card flex">
@@ -72,7 +70,7 @@
                     <p>
                         Viajar a Asia es un viaje lleno de contrastes geográficos y culturales.
                     </p>
-                    <a href="#">
+                    <a href="src/pages/continents/asia.html">
                         <b class="text-center fas fa-arrow-right flex"></b>
                     </a>
                 </div>
@@ -130,7 +128,7 @@
     </section>
 
     <!-- enterprise or traveler -->
-    <section class="enterprise-or-traveler">
+    <section class="enterprise-or-traveler" id="precios">
         <div class="enterprise-or-traveler-content1">
             <img src="src/img/recursos/travel.png" alt="viajero">
             <div>
@@ -201,6 +199,7 @@
         </p>
     </div>
     <script src="src/js/plugins/effect.js"></script>
+    <script src="src/js/plugins/hamburger-menu.js"></script>
     <script src="src/js/copyright.js"></script>
 </body>
 </html>

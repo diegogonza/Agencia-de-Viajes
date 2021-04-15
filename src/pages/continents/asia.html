@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- icon -->
+    <link rel="shortcut icon" href="../../img/icono.png" type="image/x-icon">
+    <!-- css -->
+    <link rel="stylesheet" href="../../css/style.css">
+    <link rel="stylesheet" href="../../css/mobile.css" media="screen and (max-width: 645px)">
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />  
+    <meta name="description" content="Proyecto Personal: En esta ocasión he desarrollado una página para una agencia de viajes, sí gustas puedes contactarme y podríamos trabajar juntos">
+    <title>Asia</title> 
+</head>
+<body>
+    <header>
+        <nav class="header-nav-bar flex container ">
+            <div>
+                <a href="/">
+                    <img src="../../img/logo.png" alt="logo">
+                </a>
+            </div>
+            <div class="header-nav-item ">
+                <div class="header-icon">
+                    <i class="fas fa-bars" id="hamburger" onclick="NavBar()"></i>
+                    <i class="fas fa-user"></i>
+                </div>
+                <ul class="header-nav-item-ul none" id="nav-bar">
+                    <li>
+                        <a href="/#destinos">Destinos</a>
+                    </li>
+                    <li>
+                        <a href="#precios">Precios</a>
+                    </li>
+                    <li class="header-btn-login">
+                        <a href="#" class="btn-login">Iniciar Sesión</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+
+    <section class="countries">
+        <h1 class="text-center">Disfruta de los mejores lugares de Asia</h1>
+        <div id="countries"></div>
+    </section>
+    <script src="../../js/plugins/hamburger-menu.js"></script>
+    <script src="../../js/API/main.js"></script>
+</body>
+</html> 

@@ -23,7 +23,7 @@
 header .header-nav-item-ul{
     display: inline-block;
     position: absolute;
-    top: 78px;
+    margin-top: 31px;
     right: 0;
     background-color: #0707078e;
 }
